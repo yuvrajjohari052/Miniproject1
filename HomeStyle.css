@@ -1,0 +1,238 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS Variable */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*Navigation Bar: Logo and Image */
+ #logo img{
+    height: 50px;
+    width:75px;
+   margin: 3px 3px;
+ }
+ #logo
+ {
+    margin: 5px 5px;
+ }
+/*Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2 rem;
+} 
+#navbar ul li a{
+    color: black;
+    font-weight: 500;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    height: 623px;
+}
+#home::before{
+    content: "";
+    background: url('Home1.webp');
+    position: absolute;
+    height: 600px;
+    width: 1500px;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+#home{
+    color: black;
+    text-align: center;
+}
+/* Services Section */
+#services{
+    margin:34px;
+    display: flex;
+}
+#services.box{
+     /* border:2px solid brown; */
+     align-items: center;
+     padding: 34px ;
+     margin: 3px 6px;
+     border-radius: 28px;
+
+}
+#services .box img{
+    padding: 50px 10px;
+    height:300px;
+    margin: auto;
+    display: block;
+}
+#services{
+
+}
+/* Client Section */
+.column{
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.row1{
+    content: "";
+    display:table;
+    clear: both;
+    
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 2.1rem;
+    padding:12px;
+}
+.h-secondary{
+    font-size: 2.0rem;
+    padding:12px;
+}
+.btn{
+    padding: 6px 10px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 11px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    padding: 7px;
+}
+.btn-danger
+{
+    padding: 1px 10px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.container{
+    max-width: 1170px;
+    
+    margin: auto;
+}
+.ul{
+   list-style: none; 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+      width: 25%;
+      padding: 015px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position:relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom:10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-link a:hover{
+    color: #24262b;
+    background-color: #ffffff ;
+}
+@media(max-width: 767px)
+{
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px)
+{
+    .footer-col{
+        width: 100%;
+        
+    }
+}
+
+
